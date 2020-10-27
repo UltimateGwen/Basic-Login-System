@@ -1,0 +1,84 @@
+/** @format */
+
+@import '../variables';
+
+.login {
+  display: flex;
+  height: 100vh;
+  color: $font-color;
+  font-family: $font;
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      font-weight: bold;
+      font-size: 46px;
+      margin-bottom: 3rem;
+    }
+    form {
+      width: 300px;
+      .form-input {
+        width: 100%;
+        display: flex;
+        border: 1px solid $primary;
+        border-radius: 0.25rem;
+        margin-bottom: 2.5rem;
+        input {
+          width: 100%;
+          padding: 0.5rem 1rem 0.5rem 0;
+          font-size: 1.2rem;
+          outline: none;
+          border: none;
+          border-radius: 0.25rem;
+        }
+        i {
+          position: relative;
+          padding: 15px;
+          color: $primary;
+        }
+      }
+    }
+    .checkbox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 2rem;
+      p {
+        margin-left: 10px;
+        font-size: 11px;
+      }
+      input {
+        border-color: $font-color;
+        border-style: solid;
+        border-width: 1px;
+      }
+    }
+    button {
+      background-color: $primary;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      padding: 16px 47px;
+      font-family: $font;
+      margin-bottom: 1.2rem;
+      font-weight: bold;
+      border-radius: 0.23rem;
+    }
+    .firstaccess {
+      font-size: 11px;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+    }
+    .password {
+      font-size: 11px;
+    }
+    .remember_password_label {
+      font-size: 0.75rem;
+      margin-bottom: 0;
+      margin-left: 0.25rem;
+    }
+  }
+}
